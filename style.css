@@ -177,7 +177,7 @@ iframe {
 
 /* Estilos para el mensaje de derechos reservados */
 footer p {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 0;
 }
 
@@ -185,10 +185,10 @@ footer p {
 
 /* Estilos para el footer */
 footer {
-  margin-top: 200px;
+  margin-top: 500px;
   background-color: #171717; /* Color de fondo */
   color: #b7009b; /* Color de texto */
-  padding: 10px; /* Espaciado interno */
+  padding: 5px; /* Espaciado interno */
   text-align: center; /* Alineación de texto */
 }
 
@@ -204,25 +204,25 @@ footer a:hover {
 
 /* Estilos para la sección de noticias */
 .news-section {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .news-title {
-  font-size: 2em;
-  margin-bottom: 10px;
+  font-size: 1em;
+  margin-bottom: 5px;
 }
 
 .news-item {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .news-thumbnail {
   flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
 
 .news-thumbnail img {
@@ -236,10 +236,10 @@ footer a:hover {
 }
 
 .news-date {
-  font-size: 0.8em;
-  margin-bottom: 10px;
+  font-size: 0.4em;
+  margin-bottom: 5px;
 }
 
 .news-text {
-  line-height: 1.5;
+  line-height: 1;
 }

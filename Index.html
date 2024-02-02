@@ -9,68 +9,201 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <script defer src="main.js"></script>
     <title>Portfolio Alberto serrano Lechuga</title>
   </head>
   <body>
     <header>
-      
       <nav class="navbar-nav">
         <ul>
           <li class="nav-item">
-            <h2><a href="#inicio" data-es="Sobre mí" data-en="About me">Sobre mí</a></h2>
+            <h2>
+              <a href="Index.html" data-es="Sobre mí" data-en="About me"
+                >Sobre mí</a
+              >
+            </h2>
           </li>
           <li class="nav-item">
-            <h2><a href="#acerca" data-es="Proyectos" data-en="Projects">Proyectos</a></h2>
+            <h2>
+              <a href="Proyects.html" data-es="Proyectos" data-en="Projects"
+                >Proyectos</a
+              >
+            </h2>
           </li>
           <li class="nav-item">
-            <h2><a href="#contacto" data-es="Contacto" data-en="Contact me">Contacto</a></h2>
+            <h2>
+              <a href="Contact.html" data-es="Contacto" data-en="Contact me"
+                >Contacto</a
+              >
+            </h2>
           </li>
           <li>
             <select id="language" onchange="changeLanguage()">
-              <option value="es" data-flag="https://cdn.pixabay.com/photo/2016/10/24/17/42/spain-1766739_960_720.png" alt="idioma español">Español</option>
-              <option value="en" data-flag="https://static.vecteezy.com/system/resources/thumbnails/011/571/446/small_2x/circle-flag-of-usa-free-png.png" alt="Idioma inglés">English</option>
-          </select>
-          <div id="flag-container">
-            <img id="selected-flag" src="https://cdn.pixabay.com/photo/2016/10/24/17/42/spain-1766739_960_720.png" alt="Español">
-        </div>
+              <option
+                value="es"
+                data-flag="https://cdn.pixabay.com/photo/2016/10/24/17/42/spain-1766739_960_720.png"
+                alt="idioma español"
+                class="img-fluid"
+              >
+                Español
+              </option>
+              <option
+                value="en"
+                data-flag="https://static.vecteezy.com/system/resources/thumbnails/011/571/446/small_2x/circle-flag-of-usa-free-png.png"
+                alt="Idioma inglés"
+                class="img-fluid"
+              >
+                English
+              </option>
+            </select>
+            <div id="flag-container">
+              <img
+                id="selected-flag"
+                src="https://cdn.pixabay.com/photo/2016/10/24/17/42/spain-1766739_960_720.png"
+                alt="Español"
+                class="img-fluid"
+              />
+            </div>
           </li>
         </ul>
       </nav>
-
     </header>
     <main>
-    
       <div class="jumbotron jumbotron-fluid" class="Jumbotron">
         <div class="container">
-          <h1 class="display-3" data-es="Mi Portfolio" data-en="My PortFolio">Mi Portfolio</h1>
-          <p class="lead" style="text-align: center;" data-es="Buenas! os presento mi portfolio, en las cuales os presento información sobre mí, Mis proyectos y también un formulario por si necesitáseis mi contacto" data-en="Hello! I present to you my portfolio, where I provide information about myself, my projects, and also a form in case you need to contact me.">Buenas! os presento mi PortFolio, en las cuales os presento información sobre mí, Mis proyectos y también un formulario por si necesitáseis mi contacto</p>
+          <h1 class="display-3" data-es="Mi Portfolio" data-en="My PortFolio">
+            Mi Portfolio
+          </h1>
+          <p
+            class="lead"
+          
+            data-es="Buenas! Mi nombre es Alberto Serrano Lechuga y os presento mi portfolio!, Mi objetivo es llegar a ser un desarrollador Full stack, y romper mis límites para destacar en este vasto mundo con variedad y infinidad de proyectos!"
+            data-en="Hello! My name is Alberto Serrano Lechuga, and I present to you my portfolio! My goal is to become a Full Stack developer, pushing my limits to stand out in this vast world with a variety and infinity of projects"
+          ></p>
         </div>
         <div class="container">
           <div class="gallery">
-            <img src="https://picsum.photos/id/582/400/400" alt="Mi logo">
-            <img src="https://picsum.photos/id/1074/400/400" alt="Mi rostro">
+            <img src="https://picsum.photos/id/582/400/400" alt="Mi logo" />
+            <img src="https://picsum.photos/id/1074/400/400" alt="Mi rostro" />
           </div>
         </div>
       </div>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="card mb-4 flex-grow-1">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Imagen Personalidad"
+              class="img-fluid"
+            />
+            <div class="card-content">
+              <h2 data-en="Personality" data-es="Personalidad">Personalidad</h2>
+              <p
+                data-en="I am characterized by being an honest, reliable, and kind person, principles that guide my everyday actions. I am always willing to lend a helping hand to those in need, as long as circumstances allow it. My commitment to integrity and trust is solid, making me someone who can be fully relied upon. Additionally, I possess a collaborative and supportive spirit, as I believe in the importance of empathy and mutual assistance.
 
+                My constant interest in staying updated is reflected in my desire to absorb new information daily. This habit not only aims to improve my efficiency in various areas but also nourishes my innate curiosity. I enjoy staying informed about daily news, as I believe that updated information is not only essential for personal and professional growth but also adds a touch of fun to my daily life. Ultimately, I find satisfaction in learning, being efficient, and, of course, enjoying life in a light and positive manner. 😊"
+                data-es="Me caracterizo por ser una persona honesta, confiable y amable, principios que guían mi actuar cotidiano. Siempre estoy dispuesto/a a brindar una mano amiga a aquellos que lo necesiten, siempre y cuando las circunstancias lo permitan. Mi compromiso con la integridad y la confianza es sólido, lo que me convierte en alguien en quien se puede confiar plenamente. Además, poseo un espíritu colaborativo y solidario, ya que creo en la importancia de la empatía y la ayuda mutua.
+
+                Mi interés constante por estar actualizado/a se refleja en mi deseo de absorber nueva información diariamente. Este hábito no solo busca mejorar mi eficiencia en diversas áreas, sino que también alimenta mi curiosidad innata. Disfruto de mantenerme al tanto de las novedades del día, ya que creo que la información actualizada no solo es esencial para el crecimiento personal y profesional, sino que también añade un toque de diversión a mi vida diaria. En definitiva, encuentro satisfacción en aprender, ser eficiente y, por supuesto, disfrutar de la vida de manera ligera y positiva. 😊"
+              ></p>
+            </div>
+            <button
+              href="#"
+              class="btn btn-primary show-more"
+              onclick="toggleText(this, 'content1')"
+            >
+              Ver más
+            </button>
+          </div>
+
+          <div class="card mb-4 flex-grow-1">
+            <img
+              src="Images\LaptopGyat.png"
+              alt="Imagen de Habilidades"
+              class="img-fluid"
+            />
+            <div class="card-content">
+              <h2
+                data-en="Skills & Experience"
+                data-es="Habilidades y Experiencia"
+              >
+                Habilidades y experiencia
+              </h2>
+              <p
+                data-en="Currently, I have Frontend development skills (HTML, CSS, SASS, Bootstrap, TailWind, JS, and Angular) and Backend expertise (PHP, MySQL, and Symfony with Twig). I am also proficient in various technologies such as Docker, AWS, GitHub, among many others. Additionally, I have completed a vocational training program in computer science (SMR), where I took the CCNA 1 course (without obtaining a certificate) and the Linux Essentials course (without obtaining a certificate). I hold a B1 driver's license, possess an advanced level of proficiency in English, and am fluent in Catalan/Valencian.,For more information, Below, I leave the button for you to view my CV."
+                data-es="Actualmente tengo habilidades de desarrollo Frontend(HTML,CSS,SASS,Bootstrap,TailWind,JS y Angular) y Backend(PHP,Mysql y Symfony con Twig),como también de otras tecnologías como Docker,AWS,Github entre muchos otros, También he cursado un grado medio de informática(SMR) en las cuales realicé el curso de CCNA 1(sin llegar a obtener certificado acreditativo) y el curso de Linux Essentials(sin obtener certificado acreditativo),También tengo permiso B1 de coche, como nivel avanzado de inglés y de Catalán/valenciano,Si quieres más información, debajo dejo el botón para que veas mi cv"
+              ></p>
+              <a
+                class="btn btn-primary"
+                data-en="See my CV"
+                data-es="Mira mi CV"
+                href="./documents/CV Alberto Serrano Lechuga.pdf"
+              ></a>
+            </div>
+            <button
+              href="#"
+              class="btn btn-primary show-more"
+              onclick="toggleText(this, 'content2')"
+            >
+              Ver más
+            </button>
+          </div>
+
+          <div class="card mb-4 flex-grow-1">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Imagen Hobbies"
+              class="img-fluid"
+            />
+            <div class="card-content">
+              <h2 data-en="Hobbies" data-es="Hobbies">Hobbies</h2>
+              <p
+                data-en="My main hobbies are video games, anime, and to some extent, fitness. However, I also explore a wide range of topics to broaden my horizons and not confine myself solely to what I enjoy. This openness to new experiences allows me to constantly learn and expand my perspectives, discovering connections and fascinating aspects in areas that may be outside my central interests. I firmly believe in the importance of maintaining an open and receptive mind, as each exploration enriches my understanding of the world around me. "
+                data-es="Mis pasiones principalmente incluyen los videojuegos, el anime y, en cierta medida, el fitness. Sin embargo, mi curiosidad no se limita solo a estos ámbitos; siempre estoy explorando una amplia variedad de temas para enriquecer mi perspectiva y no encerrarme exclusivamente en lo que me gusta. Esta apertura a nuevas experiencias me permite aprender constantemente y ampliar mis horizontes, descubriendo conexiones y fascinantes aspectos en áreas que pueden estar fuera de mis intereses centrales. Creo firmemente en la importancia de mantener una mente abierta y receptiva, ya que cada exploración enriquece mi comprensión del mundo que me rodea."
+              ></p>
+            </div>
+            <button
+              href="#"
+              class="btn btn-primary show-more"
+              onclick="toggleText(this, 'content3')"
+            >
+              Ver más
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
 
-
-    <footer class=" py-5">
+    <footer class="py-5">
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-            <img src="https://seeklogo.com/images/M/macaco-logo-9CCE124A41-seeklogo.com.png" width="70" height="70" alt="Mi logo">
+            <img
+              src="https://seeklogo.com/images/M/macaco-logo-9CCE124A41-seeklogo.com.png"
+              width="70"
+              height="70"
+              alt="Mi logo"
+            />
             <p class="mt-3">Redes Sociales!</p>
             <div class="social-icons mt-3">
               <div class="social-icons mt-3">
-                  <a href="https://www.instagram.com/lechu_d_cata/?hl=es"><img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-square2-512.png" alt="Instagram"></a>
-                  <a href="https://github.com/zacky420"><img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-256.png" alt="Github"></a>
-                  <a href="https://www.linkedin.com/in/alberto-serrano-lechuga/"><img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-square2-512.png" alt="LinkedIn"></a>
-                </div>
-                
+                <a href="https://www.instagram.com/lechu_d_cata/?hl=es"
+                  ><img
+                    src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-square2-512.png"
+                    alt="Instagram"
+                /></a>
+                <a href="https://github.com/zacky420"
+                  ><img
+                    src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-256.png"
+                    alt="Github"
+                /></a>
+                <a href="https://www.linkedin.com/in/alberto-serrano-lechuga/"
+                  ><img
+                    src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-square2-512.png"
+                    alt="LinkedIn"
+                /></a>
+              </div>
             </div>
           </div>
           <div class="col-md-3">
@@ -78,18 +211,32 @@
             <ul class="list-unstyled">
               <li><i class="fas fa-map-marker-alt"></i>Dirección: Valencia</li>
               <li><i class="fas fa-phone"></i> Teléfono: +34 601215848</li>
-              <li><i class="fas fa-envelope"></i> Email: albertoserrano7@hotmail.com</li>
+              <li>
+                <i class="fas fa-envelope"></i> Email:
+                <a href="mailto:albertoserrano7@hotmail.com?subject=Buenas!"
+                  >albertoserrano7@hotmail.com</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-md-6">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.7540684752185!2d-71.57597908488984!3d-33.02981293152047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d12c0e22b2a9%3A0xeda16706f1284dc4!2sPlaza%20de%20Armas%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1sen!2sus!4v1650432246343!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.7540684752185!2d-71.57597908488984!3d-33.02981293152047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d12c0e22b2a9%3A0xeda16706f1284dc4!2sPlaza%20de%20Armas%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1sen!2sus!4v1650432246343!5m2!1sen!2sus"
+              width="100%"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>
       <div class="container mt-3">
         <div class="row">
           <div class="col-md-12 text-center">
-            <p class="mb-0">© 2024 Made by Lehuek. Todos los derechos reservados.</p>
+            <p class="mb-0">
+              © 2024 Made by Lehuek. Todos los derechos reservados.
+            </p>
           </div>
         </div>
       </div>

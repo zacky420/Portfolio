@@ -21,3 +21,14 @@ function updateContent(selectedLanguage) {
 
 // Llamada inicial para establecer el contenido inicial
 updateContent("es");
+
+
+
+function toggleText(element) {
+  const cardContent = element.previousElementSibling;
+  cardContent.style.maxHeight = cardContent.style.maxHeight === '150px' ? '100%' : '150px';
+  element.innerText = cardContent.style.maxHeight === '150px' ? 'Ver más' : 'Ver menos';
+}
+
+
+

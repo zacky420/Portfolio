@@ -6,11 +6,12 @@ body {
   background-color: #000000;
   color:white;
   font-size: 16px; 
+  
 }
 
 
 #language-selector {
-  margin: 20px 0;
+  margin: 10px;
 }
 
 h1 {
@@ -24,14 +25,13 @@ nav {
 nav ul {
   list-style: none;
   padding: 10px;
-  margin: 15px;
+  margin: 10px;
   display: flex;
   align-items: center; /* Centrar verticalmente los elementos */
 }
 
 nav ul li {
-  margin-right: 10px;
-  flex: 0.5; /* Ocupar el ancho total del contenedor */
+  flex: 2; /* Ocupar el ancho total del contenedor */
   text-align: center; /* Centrar el texto dentro de li */
 }
 
@@ -96,7 +96,7 @@ margin-bottom: 15px;
 
 .gallery {
   --g: 8px; /* the gap */
-  
+  object-fit: cover;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -178,14 +178,14 @@ iframe {
 /* Estilos para el mensaje de derechos reservados */
 footer p {
   font-size: 30px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 
 
 /* Estilos para el footer */
 footer {
-  margin-top: 500px;
+  margin-top: 200px;
   background-color: #171717; /* Color de fondo */
   color: #b7009b; /* Color de texto */
   padding: 5px; /* Espaciado interno */
@@ -242,4 +242,52 @@ footer a:hover {
 
 .news-text {
   line-height: 1;
+}
+
+
+
+
+.card {
+  width: 350px;
+  background-color: #5c5c5c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 70px;
+  margin-top: 200px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+  color: white;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+  padding: 20px;
+  max-height: 150px; /* Altura máxima inicial */
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.card h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+.show-more {
+   cursor: pointer;
+      color: #007bff; /* Color de enlace de Bootstrap */
 }

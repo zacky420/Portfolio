@@ -9,8 +9,8 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="./assets/Css/ProyectsStyle.css" />
+    <script defer src="./assets/JS/main.js"></script>
     <title>Portfolio Alberto serrano Lechuga</title>
   </head>
   <body>
@@ -38,7 +38,7 @@
               >
             </h2>
           </li>
-          <li>
+          <li class="nav-item">
             <select id="language" onchange="changeLanguage()">
               <option
                 value="es"
@@ -70,111 +70,123 @@
       </nav>
     </header>
     <main>
-      <div class="jumbotron jumbotron-fluid" class="Jumbotron">
-        <div class="container">
-          <h1 class="display-3" data-es="Mi Portfolio" data-en="My PortFolio">
-            Mi Portfolio
-          </h1>
-          <p
-            class="lead"
-          
-            data-es="Buenas! Mi nombre es Alberto Serrano Lechuga y os presento mi portfolio!, Mi objetivo es llegar a ser un desarrollador Full stack, y romper mis límites para destacar en este vasto mundo con variedad y infinidad de proyectos!"
-            data-en="Hello! My name is Alberto Serrano Lechuga, and I present to you my portfolio! My goal is to become a Full Stack developer, pushing my limits to stand out in this vast world with a variety and infinity of projects"
-          ></p>
-        </div>
-        <div class="container">
-          <div class="gallery">
-            <img src="./Images/ASLDev Logo.png" alt="Mi logo" />
-            <img src="https://picsum.photos/id/1074/400/400" alt="Mi rostro" />
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="card mb-4 flex-grow-1">
-            <img
-              src="https://cdn-icons-png.freepik.com/256/7755/7755903.png"
-              alt="Imagen Personalidad"
-              class="img-fluid"
-            />
-            <div class="card-content">
-              <h2 data-en="Personality" data-es="Personalidad">Personalidad</h2>
-              <p
-                data-en="I am characterized by being an honest, reliable, and kind person, principles that guide my everyday actions. I am always willing to lend a helping hand to those in need, as long as circumstances allow it. My commitment to integrity and trust is solid, making me someone who can be fully relied upon. Additionally, I possess a collaborative and supportive spirit, as I believe in the importance of empathy and mutual assistance.
-
-                My constant interest in staying updated is reflected in my desire to absorb new information daily. This habit not only aims to improve my efficiency in various areas but also nourishes my innate curiosity. I enjoy staying informed about daily news, as I believe that updated information is not only essential for personal and professional growth but also adds a touch of fun to my daily life. Ultimately, I find satisfaction in learning, being efficient, and, of course, enjoying life in a light and positive manner. 😊"
-                data-es="Me caracterizo por ser una persona honesta, confiable y amable, principios que guían mi actuar cotidiano. Siempre estoy dispuesto/a a brindar una mano amiga a aquellos que lo necesiten, siempre y cuando las circunstancias lo permitan. Mi compromiso con la integridad y la confianza es sólido, lo que me convierte en alguien en quien se puede confiar plenamente. Además, poseo un espíritu colaborativo y solidario, ya que creo en la importancia de la empatía y la ayuda mutua.
-
-                Mi interés constante por estar actualizado/a se refleja en mi deseo de absorber nueva información diariamente. Este hábito no solo busca mejorar mi eficiencia en diversas áreas, sino que también alimenta mi curiosidad innata. Disfruto de mantenerme al tanto de las novedades del día, ya que creo que la información actualizada no solo es esencial para el crecimiento personal y profesional, sino que también añade un toque de diversión a mi vida diaria. En definitiva, encuentro satisfacción en aprender, ser eficiente y, por supuesto, disfrutar de la vida de manera ligera y positiva. 😊"
-              ></p>
+      <section>
+        <!-- Sección principal 2 en un Jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 offset-md-2">
+                <h3 data-en="Services">Servicios</h3>
+                <!-- Ejemplos de productos/servicios en la sección 2 -->
+                <div class="row">
+                  <div class="col-md-4">
+                    <!-- Cambiando servicios por cards -->
+                    <div class="card">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/previews/028/023/594/non_2x/video-game-controller-shown-as-a-simple-3d-image-it-looks-like-a-joystick-in-3d-form-free-png.png"
+                        alt="Imagen Hobbies"
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title" data-en="Web Application Design">Diseño de Aplicaciones Web</h5>
+                        <p class="card-text" data-en="Create a unique online experience with our web application design service. I transform your ideas into captivating and functional interfaces to provide your users with an exceptional experience. Elevate your digital presence with a standout design!""> Crea una experiencia única en línea con nuestro servicio de diseño de aplicaciones web. Transformo tus ideas en interfaces cautivadoras y funcionales para ofrecer a tus usuarios una experiencia excepcional. ¡Eleva tu presencia digital con un diseño que destaque!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <!-- Cambiando servicios por cards -->
+                    <div class="card">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/previews/028/023/594/non_2x/video-game-controller-shown-as-a-simple-3d-image-it-looks-like-a-joystick-in-3d-form-free-png.png"
+                        alt="Imagen Hobbies"
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title" data-en="Maintenance and Enhancements for Web Applications">Mantenimiento y mejoras de aplicaciones Web</h5>
+                        <p class="card-text" data-en="I specialize in maintaining and enhancing web applications. Ensure the seamless functionality and continual improvement of your online presence with my dedicated services. Let's optimize your digital experience together!">Me especializo en el mantenimiento y mejora de aplicaciones web. Asegura la funcionalidad continua y la mejora constante de tu presencia en línea con mis servicios dedicados. ¡Optimicemos juntos tu experiencia digital!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <!-- Cambiando servicios por cards -->
+                    <div class="card">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/previews/028/023/594/non_2x/video-game-controller-shown-as-a-simple-3d-image-it-looks-like-a-joystick-in-3d-form-free-png.png"
+                        alt="Imagen Hobbies"
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title" data-en="Application Deployment and Database Management">Despliegue de aplicación y manejo de base de datos</h5>
+                        <p class="card-text" data-en="I excel in deploying applications and handling database management. From seamless application launches to efficient database administration, count on me for a streamlined and effective digital solution. Let's elevate your technological landscape together!">Me especializo en el despliegue de aplicaciones y la gestión de bases de datos. Desde lanzamientos de aplicaciones sin problemas hasta una administración eficiente de bases de datos, cuenta conmigo para obtener una solución digital eficaz y simplificada. ¡Elevemos juntos tu entorno tecnológico!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repetir estructura para otras secciones principales -->
             </div>
-            <button
-              href="#"
-              class="btn btn-primary show-more"
-              onclick="toggleText(this, 'content1')"
-            >
-              Ver más
-            </button>
-          </div>
-
-          <div class="card mb-4 flex-grow-1">
-            <img
-              src="Images\LaptopGyat.png"
-              alt="Imagen de Habilidades"
-              class="img-fluid"
-            />
-            <div class="card-content">
-              <h2
-                data-en="Skills & Experience"
-                data-es="Habilidades y Experiencia"
-              >
-                Habilidades y experiencia
-              </h2>
-              <p
-                data-en="
-                Currently, I have Frontend development skills (HTML, CSS, SASS, Bootstrap, TailWind, JS, and Angular) and Backend expertise (PHP, MySQL, and Symfony with Twig). Additionally, I am proficient in other technologies such as Docker, AWS, and GitHub. Through my  previous jobs, I gained user experience with Salesforce and Jira (including Jira Next) as I have also gained experience with customer service. I have also completed a vocational training program in computer science (SMR), where I took the CCNA 1 course (without obtaining a certificate) and the Linux Essentials course (without obtaining a certificate). I hold a B1 driver's license and possess an advanced level of proficiency in English and Catalan/Valencian. If you would like more information, I have provided a button below for you to view my CV."
-                data-es="Actualmente tengo habilidades de desarrollo Frontend(HTML,CSS,SASS,Bootstrap,TailWind,JS y Angular) y Backend(PHP,Mysql y Symfony con Twig),como también de otras tecnologías como Docker,AWS,Github y por mis trabajos anteriores Experiencia de usuario de Salesforce y Jira(Jira next incluido) como también he ganado experiencia con atención al cliente, También he cursado un grado medio de informática(SMR) en las cuales realicé el curso de CCNA 1(sin llegar a obtener certificado acreditativo) y el curso de Linux Essentials(sin obtener certificado acreditativo),También tengo permiso B1 de coche, como nivel avanzado de inglés y de Catalán/valenciano,Si quieres más información, debajo dejo el botón para que veas mi cv."
-              ></p>
-              <a
-                class="btn btn-primary"
-                data-en="See my CV"
-                data-es="Mira mi CV"
-                href="./documents/CV Alberto Serrano Lechuga.pdf"
-              ></a>
-            </div>
-            <button
-              href="#"
-              class="btn btn-primary show-more"
-              onclick="toggleText(this, 'content2')"
-            >
-              Ver más
-            </button>
-          </div>
-
-          <div class="card mb-4 flex-grow-1">
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/028/023/594/non_2x/video-game-controller-shown-as-a-simple-3d-image-it-looks-like-a-joystick-in-3d-form-free-png.png"
-              alt="Imagen Hobbies"
-              class="img-fluid"
-            />
-            <div class="card-content">
-              <h2 data-en="Hobbies" data-es="Hobbies">Hobbies</h2>
-              <p
-                data-en="My passions are primarily focused on video games, anime, and, to some extent, fitness. However, my curiosity is not limited to these areas; I am constantly exploring a wide variety of topics to enrich my perspective and avoid confining myself exclusively to what I already enjoy. This openness to new experiences allows me to learn continuously, broaden my horizons, and discover connections and fascinating aspects in areas that may be outside of my central interests. I strongly believe in the importance of maintaining an open and receptive mind, as each exploration significantly enriches my understanding of the world around me. This approach not only fuels my personal growth but also encourages connections with diverse perspectives and knowledge, allowing me to appreciate the richness of diversity in learning and life in general. "
-                data-es="
-                Mis pasiones se centran principalmente en los videojuegos, el anime y, hasta cierto punto, el fitness. Sin embargo, mi curiosidad no se limita a estos ámbitos; estoy constantemente explorando una amplia variedad de temas para enriquecer mi perspectiva y evitar encerrarme exclusivamente en lo que ya me gusta. Esta apertura a nuevas experiencias me brinda la oportunidad de aprender de manera continua, expandir mis horizontes y descubrir conexiones y aspectos fascinantes en áreas que pueden estar fuera de mis intereses centrales. Creo firmemente en la importancia de mantener una mente abierta y receptiva, ya que cada exploración contribuye significativamente a enriquecer mi comprensión del mundo que me rodea. Este enfoque no solo alimenta mi crecimiento personal, sino que también fomenta la conexión con diversas perspectivas y conocimientos, permitiéndome apreciar la riqueza de la diversidad en el aprendizaje y la vida en general."
-              ></p>
-            </div>
-            <button
-              href="#"
-              class="btn btn-primary show-more"
-              onclick="toggleText(this, 'content3')"
-            >
-              Ver más
-            </button>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section>
+        <!-- Sección principal 2 en un Jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 offset-md-2">
+                <h3>Proyectos</h3>
+                <!-- Ejemplos de productos/servicios en la sección 2 -->
+                <div class="row">
+                  <div class="col-md-4">
+                    <!-- Cambiando servicios por cards -->
+                    <div class="card">
+                      <img
+                        src="./Images/Proyecto1.PNG"
+                        alt="Proyecto 1"
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Multitool Proyect <strong>WIP</strong></h5>
+                        <p class="card-text" data-en="Angular project featuring multiple available tools.">Proyecto realizado con Angular en las cuales tiene varias herramientas disponibles</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <!-- Cambiando servicios por cards -->
+                    <div class="card">
+                      <img
+                        src="./Images/Proyecto2.PNG"
+                        alt="Proyecto 2"
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">El tiempo Api Proyect  <strong>WIP</strong> </h5>
+                        <p class="card-text" data-en="Project developed with Angular that utilizes the Eltiempo API.">Proyecto realizado con Angular en las cuales se utiliza la API de Eltiempo</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <!-- Cambiando servicios por cards -->
+                    <div class="card">
+                      <img
+                        src="./Images/Proyecto3.PNG"
+                        alt="Proyecto 3"
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Fake Products Api  <strong>WIP</strong></h5>
+                        <p class="card-text" data-en="Project developed with Angular, using the Platzi Fake Products API.">Proyecto realizado con Angular en las cuales se utiliza la Api de Fake Products de Platzi.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repetir estructura para otras secciones principales -->
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="py-5">
@@ -182,12 +194,18 @@
         <div class="row">
           <div class="col-md-3">
             <img
-              src="https://seeklogo.com/images/M/macaco-logo-9CCE124A41-seeklogo.com.png"
+              src="./Images/ASLDev Logo.png"
               width="70"
               height="70"
               alt="Mi logo"
             />
-            <p class="mt-3">Redes Sociales!</p>
+            <p
+              class="mt-3"
+              data-es="Redes Sociales!"
+              data-en="Social Networks!"
+            >
+              Redes Sociales!
+            </p>
             <div class="social-icons mt-3">
               <div class="social-icons mt-3">
                 <a href="https://www.instagram.com/lechu_d_cata/?hl=es"
@@ -209,10 +227,24 @@
             </div>
           </div>
           <div class="col-md-3">
-            <h5>Información de contacto</h5>
+            <h5 data-en="Contact Information" data-es="Información de contacto">
+              Información de contacto
+            </h5>
             <ul class="list-unstyled">
-              <li><i class="fas fa-map-marker-alt" data-es="Dirección: Valencia " data-en="Location: Valencia"></i></li>
-              <li><i class="fas fa-phone" data-en="Phone: +34 601215848" data-es="Teléfono: +34 601215848"></i> </li>
+              <li>
+                <i
+                  class="fas fa-map-marker-alt"
+                  data-es="Dirección: Valencia "
+                  data-en="Location: Valencia"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fas fa-phone"
+                  data-en="Phone: +34 601215848"
+                  data-es="Teléfono: +34 601215848"
+                ></i>
+              </li>
               <li>
                 <i class="fas fa-envelope"></i> Email:
                 <a href="mailto:albertoserrano7@hotmail.com?subject=Buenas!"
@@ -236,12 +268,17 @@
       <div class="container mt-3">
         <div class="row">
           <div class="col-md-12 text-center">
-            <p class="mb-0" data-es="© 2024 Made by Alberto Serrano Lechuga. Todos los derechos reservados." data-en=" ">
-              
-            </p>
+            <p
+              class="mb-0"
+              data-es="© 2024 Made by Alberto Serrano Lechuga. Todos los derechos reservados."
+              data-en="'© 2024 Made by Alberto Serrano Lechuga. All rights reserved.' "
+            ></p>
           </div>
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 body {
   margin: auto;
   padding: auto;
-  height: 50vh;
+  height: 100vh;
   font-family:Helvetica, Arial, sans-serif;
   background-color: #000000;
   color:white;
@@ -70,64 +70,48 @@ header {
 
 nav ul li select {
 margin-bottom: 15px;
+ margin-left: auto;
 
 }
 
+
+main {
+  padding: 30px; /* Añadido un espacio interno al contenido principal */
+}
+
+section {
+  margin-bottom: 40px; /* Espaciado inferior entre secciones */
+}
+
+h3 {
+  color: #ffffff; /* Color del título de la sección */
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
 
 .jumbotron {
-
   background-color: #0e0d0d;
-  padding: 20px;
-  text-align: center;
-
-
+  padding: 40px;
+  margin-top: 30px;
 }
 
-
-.jumbotron img {
-
-  width: 400px;
-  height: auto;
-
-  
+.card {
+  margin-bottom: 20px;
+  background-color: #1b1b1b;
+  border: 1px solid #343a40;
+  border-radius: 10px;
 }
 
-
-
-.gallery {
-  --g: 8px; /* the gap */
-  object-fit: cover;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  clip-path: inset(1px); /* to avoid visual glitchs */
-}
-.gallery > img {
-  --_p: calc(-1*var(--g));
-  grid-area: 1/1;
-  width: 350px; /* control the size */
-  aspect-ratio: 1;
-  cursor: pointer;
-  transition: .4s .1s;
-}
-.gallery > img:first-child {
-  clip-path: polygon(0 0, calc(100% + var(--_p)) 0 , 0 calc(100% + var(--_p)))
-}
-.gallery > img:last-child {
-  clip-path: polygon(100% 100%, 100% calc(0% - var(--_p)), calc(0% - var(--_p)) 100%)
-}
-.gallery:hover > img:last-child,
-.gallery:hover > img:first-child:hover{
-  --_p: calc(50% - var(--g));
-}
-.gallery:hover > img:first-child,
-.gallery:hover > img:first-child:hover + img{
-  --_p: calc(-50% - var(--g));
+.card img {
+  width: 400px; /* Tamaño fijo para las imágenes en las cards */
+  height: auto; /* Mantener la proporción original */
 }
 
-
-
-
+.card-title,
+.card-text {
+  color: #ffffff;
+}
 /* Estilos para el footer */
 footer {
   font-size: 20px;
@@ -246,48 +230,3 @@ footer a:hover {
 
 
 
-
-.card {
-  width: 350px;
-  background-color: #5c5c5c;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 70px;
-  margin-top: 200px;
-  overflow: hidden;
-  transition: transform 0.5s ease-in-out;
-  color: white;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-bottom: 1px solid #ddd;
-}
-
-.card-content {
-  padding: 20px;
-  max-height: 150px; /* Altura máxima inicial */
-  overflow: hidden;
-  transition: max-height 0.5s ease;
-}
-
-.card h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 1.2em;
-  color: #ffffff;
-}
-
-.show-more {
-   cursor: pointer;
-      color: #6b0069; /* Color de enlace de Bootstrap */
-}

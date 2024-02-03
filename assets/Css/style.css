@@ -1,8 +1,9 @@
+
 body {
   margin: auto;
   padding: auto;
   height: 50vh;
-  font-family:Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #000000;
   color:white;
   font-size: 16px; 
@@ -16,16 +17,18 @@ body {
 
 h1 {
   text-align: center;
+  font-family:Helvetica, sans-serif,Arial;
 }
 
 nav {
   background-color: #2f2f2f;
+  font-family:Helvetica, sans-serif,Arial;
 }
 
 nav ul {
   list-style: none;
   padding: 10px;
-  margin: 10px;
+  margin: 10px; /* <- Aquí está la diferencia */
   display: flex;
   align-items: center; /* Centrar verticalmente los elementos */
 }
@@ -72,7 +75,6 @@ nav ul li select {
 margin-bottom: 15px;
 
 }
-
 
 .jumbotron {
 
